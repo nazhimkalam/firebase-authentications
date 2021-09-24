@@ -1,12 +1,33 @@
+import { useState } from "react";
 import styled from "styled-components";
+import { auth } from "../../firebase";
 
 const EmailAndPassword = () => {
-  const login = (e) => {
-    e.preventDefault();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const login = (event) => {
+    event.preventDefault();
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        alert("Login Successful");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
   };
 
-  const signUp = (e) => {
-    e.preventDefault();
+  const signUp = (event) => {
+    event.preventDefault();
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((user) => {
+        alert(`Welcome ${user.user.email}`);
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
   };
 
   return (
@@ -14,11 +35,19 @@ const EmailAndPassword = () => {
       <h2>Email & Password</h2>
       <form>
         <section>
-          <input className="form-control form-control-lg m-2 " type="text" placeholder="Email" />
+          <input
+            className="form-control form-control-lg m-2 "
+            type="text"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <input
             className="form-control form-control-lg m-2"
             type="password"
             placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </section>
         <section>
