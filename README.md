@@ -8,13 +8,10 @@ This repository contains all the authentication implementations with a javascrip
 ### Authentication types includes:
 
 1. **Email and password** ✔
-2. **Phone number**        
-3. **Google** ✔
-4. **Facebook**
-5. **Twitter**
-6. **Apple**
-7. **Github**
-8. **Microsoft**
-9. **Yahoo**
-10. **Play Games**
-11. **Game Center**
+2. **Google** ✔
+3. **Facebook** ✔
+4. **Twitter** ✔
+5. **Apple** ✔
+6. **Github** ✔
+7. **Microsoft** ✔
+8. **Yahoo** ✔

@@ -1,9 +1,12 @@
 import styled from "styled-components";
+import AppleAuthentication from "./components/apple/AppleAuthentication";
 import EmailAndPassword from "./components/emailPassword/EmailAndPassword";
 import FacebookAuthentication from "./components/facebook/FacebookAuthentication";
 import GithubAuthentication from "./components/github/GithubAuthentication";
 import GoogleAuthentication from "./components/google/GoogleAuthentication";
+import MicrosoftAuthentication from "./components/microsoft/MicrosoftAuthentication";
 import TwitterAuthentication from "./components/twitter/TwitterAuthentication";
+import YahooAuthentication from "./components/yahoo/YahooAuthentication";
 
 const App = () => {
   return (
@@ -13,7 +16,10 @@ const App = () => {
       <GoogleAuthentication />
       <FacebookAuthentication />
       <GithubAuthentication />
+      <YahooAuthentication />
       <TwitterAuthentication />
+      <MicrosoftAuthentication />
+      <AppleAuthentication />
     </Container>
   );
 };

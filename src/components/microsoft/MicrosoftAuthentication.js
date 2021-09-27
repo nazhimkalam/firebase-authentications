@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { auth, googleProvider, twitterProvider } from "../../firebase";
+import { auth, microsoftProvider } from "../../firebase";
 
-const TwitterAuthentication = () => {
+const MicrosoftAuthentication = () => {
   const onHandleSignIn = async (e) => {
     e.preventDefault();
     await auth
-      .signInWithPopup(twitterProvider)
+      .signInWithPopup(microsoftProvider)
       .then((response) => {
         console.log(response);
         alert(`Welcome ${response.user.displayName}`);
@@ -30,9 +30,9 @@ const TwitterAuthentication = () => {
 
   return (
     <Container>
-      <h2>Twitter Authentication</h2>
+      <h2>Microsoft Authentication</h2>
       <form>
-        <button className="btn btn-info btn-md m-1" onClick={onHandleSignIn}>
+        <button className="btn btn-warning btn-md m-1" onClick={onHandleSignIn}>
           SignIn
         </button>
         <button
@@ -45,7 +45,7 @@ const TwitterAuthentication = () => {
   );
 };
 
-export default TwitterAuthentication;
+export default MicrosoftAuthentication;
 
 const Container = styled.div`
   padding: 2pc;
