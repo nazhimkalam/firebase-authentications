@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import EmailAndPassword from "./components/emailPassword/EmailAndPassword";
 import FacebookAuthentication from "./components/facebook/FacebookAuthentication";
+import GithubAuthentication from "./components/github/GithubAuthentication";
 import GoogleAuthentication from "./components/google/GoogleAuthentication";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <EmailAndPassword />
       <GoogleAuthentication />
       <FacebookAuthentication />
+      <GithubAuthentication />
     </Container>
   );
 };
