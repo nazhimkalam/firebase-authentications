@@ -1,5 +1,5 @@
 # Firebase Authentication
-(still working on this repo)
+(under development)
 
 Authenticate and manage users from a variety of providers without server-side code.
 
