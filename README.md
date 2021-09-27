@@ -1,4 +1,4 @@
-# Firebase Authentication
+# <img align="center" src="https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png" alt="@nazhimkalam" height="55" width="35" /> Firebase Authentication
 
 Authenticate and manage users from a variety of providers without server-side code.
 
