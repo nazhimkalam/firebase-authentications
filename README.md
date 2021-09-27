@@ -1,7 +1,5 @@
 # Firebase Authentication
 
-(under development)
-
 Authenticate and manage users from a variety of providers without server-side code.
 
 This repository contains all the authentication implementations with a javascript framework, React Js.
@@ -18,3 +16,6 @@ You will be needing app id and secret from the following providers: Facebook, Ya
 6. **Github** ✔
 7. **Microsoft** ✔ (Paid developer account required)
 8. **Yahoo** ✔
+
+
+![image](https://user-images.githubusercontent.com/61329442/134936425-b909c758-2843-47b7-a432-0838e3ea9e77.png)
