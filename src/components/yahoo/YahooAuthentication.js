@@ -31,6 +31,7 @@ const YahooAuthentication = () => {
   return (
     <Container>
       <h2>Yahoo Authentication</h2>
+      <img src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/yahoo-512.png" className="image" alt="" />
       <form>
         <button className="btn btn-danger btn-md m-1" onClick={onHandleSignIn}>
           SignIn
@@ -63,5 +64,10 @@ const Container = styled.div`
     button {
       width: 100%;
     }
+  }
+  .image {
+    object-fit: contain;
+    width: 50px;
+    margin: 1pc;
   }
 `;

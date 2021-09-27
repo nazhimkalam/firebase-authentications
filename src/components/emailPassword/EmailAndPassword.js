@@ -6,7 +6,7 @@ const EmailAndPassword = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const login = async(event) => {
+  const login = async (event) => {
     event.preventDefault();
     await auth
       .signInWithEmailAndPassword(email, password)
@@ -33,6 +33,7 @@ const EmailAndPassword = () => {
   return (
     <Container>
       <h2>Email & Password</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" className="image" alt="" />
       <form>
         <section>
           <input
@@ -84,5 +85,10 @@ const Container = styled.div`
         width: 100%;
       }
     }
+  }
+  .image {
+    object-fit: contain;
+    width: 50px;
+    margin: 1pc;
   }
 `;

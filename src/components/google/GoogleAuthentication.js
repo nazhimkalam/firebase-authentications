@@ -31,6 +31,7 @@ const GoogleAuthentication = () => {
   return (
     <Container>
       <h2>Google Authentication</h2>
+      <img src="https://cdn.icon-icons.com/icons2/836/PNG/512/Google_icon-icons.com_66793.png" className="image" alt="" />
       <form>
         <button className="btn btn-danger btn-md m-1" onClick={onHandleSignIn}>
           SignIn
@@ -63,5 +64,10 @@ const Container = styled.div`
     button {
       width: 100%;
     }
+  }
+  .image {
+    object-fit: contain;
+    width: 50px;
+    margin: 1pc;
   }
 `;

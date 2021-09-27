@@ -31,6 +31,7 @@ const GithubAuthentication = () => {
   return (
     <Container>
       <h2>Github Authentication</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" className="image" alt="" />
       <form>
         <button className="btn btn-success btn-md m-1" onClick={onHandleSignIn}>
           SignIn
@@ -63,5 +64,10 @@ const Container = styled.div`
     button {
       width: 100%;
     }
+  }
+  .image {
+    object-fit: contain;
+    width: 50px;
+    margin: 1pc;
   }
 `;

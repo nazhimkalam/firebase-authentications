@@ -31,6 +31,7 @@ const MicrosoftAuthentication = () => {
   return (
     <Container>
       <h2>Microsoft Authentication</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" className="image" alt="" />
       <form>
         <button className="btn btn-warning btn-md m-1" onClick={onHandleSignIn}>
           SignIn
@@ -63,5 +64,10 @@ const Container = styled.div`
     button {
       width: 100%;
     }
+  }
+  .image {
+    object-fit: contain;
+    width: 50px;
+    margin: 1pc;
   }
 `;

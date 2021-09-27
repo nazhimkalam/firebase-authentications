@@ -11,7 +11,14 @@ import YahooAuthentication from "./components/yahoo/YahooAuthentication";
 const App = () => {
   return (
     <Container>
-      <h1>Firebase Authentications</h1>
+      <div className="title-section">
+        <h1>Firebase Authentications</h1>
+        <img
+          src="https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png"
+          className="image"
+          alt=""
+        />
+      </div>
       <EmailAndPassword />
       <GoogleAuthentication />
       <FacebookAuthentication />
@@ -30,6 +37,16 @@ const Container = styled.div`
   margin: 1pc;
   > h1 {
     text-align: center;
+    margin: 1pc;
+  }
+  .title-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image {
+    object-fit: contain;
+    width: 50px;
     margin: 1pc;
   }
 `;

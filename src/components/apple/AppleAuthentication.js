@@ -31,6 +31,7 @@ const AppleAuthentication = () => {
   return (
     <Container>
       <h2>Apple Authentication</h2>
+      <img src="http://simpleicon.com/wp-content/uploads/apple.png" className="image" alt="" />
       <form>
         <button className="btn btn-dark btn-md m-1" onClick={onHandleSignIn}>
           SignIn
@@ -63,5 +64,10 @@ const Container = styled.div`
     button {
       width: 100%;
     }
+  }
+  .image {
+    object-fit: contain;
+    width: 50px;
+    margin: 1pc;
   }
 `;
