@@ -6,9 +6,9 @@ const EmailAndPassword = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const login = (event) => {
+  const login = async(event) => {
     event.preventDefault();
-    auth
+    await auth
       .signInWithEmailAndPassword(email, password)
       .then((auth) => {
         alert("Login Successful");
