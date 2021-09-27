@@ -3,6 +3,7 @@ import EmailAndPassword from "./components/emailPassword/EmailAndPassword";
 import FacebookAuthentication from "./components/facebook/FacebookAuthentication";
 import GithubAuthentication from "./components/github/GithubAuthentication";
 import GoogleAuthentication from "./components/google/GoogleAuthentication";
+import TwitterAuthentication from "./components/twitter/TwitterAuthentication";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <GoogleAuthentication />
       <FacebookAuthentication />
       <GithubAuthentication />
+      <TwitterAuthentication />
     </Container>
   );
 };
