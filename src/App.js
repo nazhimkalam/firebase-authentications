@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import EmailAndPassword from "./components/emailPassword/EmailAndPassword";
+import FacebookAuthentication from "./components/facebook/FacebookAuthentication";
 import GoogleAuthentication from "./components/google/GoogleAuthentication";
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
       <h1>Firebase Authentications</h1>
       <EmailAndPassword />
       <GoogleAuthentication />
+      <FacebookAuthentication />
     </Container>
   );
 };

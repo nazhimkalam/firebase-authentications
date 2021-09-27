@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { auth, googleProvider } from "../../firebase";
+import { auth, facebookProvider } from "../../firebase";
 
-const GoogleAuthentication = () => {
+const FacebookAuthentication = () => {
   const onHandleSignIn = async (e) => {
     e.preventDefault();
     await auth
-      .signInWithPopup(googleProvider)
+      .signInWithPopup(facebookProvider)
       .then((response) => {
         console.log(response);
         alert(`Welcome ${response.user.displayName}`);
@@ -30,9 +30,9 @@ const GoogleAuthentication = () => {
 
   return (
     <Container>
-      <h2>Google Authentication</h2>
+      <h2>Facebook Authentication</h2>
       <form>
-        <button className="btn btn-danger btn-md m-1" onClick={onHandleSignIn}>
+        <button className="btn btn-primary btn-md m-1" onClick={onHandleSignIn}>
           SignIn
         </button>
         <button
@@ -45,7 +45,7 @@ const GoogleAuthentication = () => {
   );
 };
 
-export default GoogleAuthentication;
+export default FacebookAuthentication;
 
 const Container = styled.div`
   padding: 2pc;
